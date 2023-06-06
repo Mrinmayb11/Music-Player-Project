@@ -23,12 +23,33 @@
                 <img id="Logo-bars" src="images/logo.png" alt="">
                 <span class="Logo-name">Music</span>
             <ul id="ul-list" class="flex-row">
-                <a href=""><button class="Sign-btn">Sign Up</button></a>
+                <button onclick="d.showModal()" class="Sign-btn">Sign Up</button>
                 <a href=""><i class="fa-regular fa-user"></i></a>
             </ul>
         </nav>
     </header>
     <main>
+        <dialog id="d">
+            <form class="flex-column" method="dialog" action="">
+                <h2>Sign Up</h2>
+                <div class="flex-row" style="gap: 10px;">
+                    <input type="text" name="" id="" placeholder="   Firstname">
+                    <input type="text" name="" id="" placeholder="   Surename">
+                </div>
+                    <input class="e-p" type="email" name="" id="" placeholder="   Email">
+                    <input class="e-p" type="password" placeholder="   Password">
+                <p>Already a member? Log In</p>
+                <button class="feature-btn">Sign Up</button>
+                <div>
+                    <p>or</p>
+                    <div class="flex-column" style="gap: 10px;" >
+                        <button class="">Continue With Google</button>
+                        <button class="">Continue With Facebook</button>
+                    </div>
+                </div>
+            </form>
+            <button onclick="d.close()" id="Closed"><i class="fa-solid fa-xmark"></i></button>
+        </dialog>
         <section class="playlist">
             <ul id="ul-list-2">
                 <a class="flex-row" href="">

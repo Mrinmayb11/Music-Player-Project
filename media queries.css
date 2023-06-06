@@ -16,6 +16,9 @@
     .main-img h1{
         width: 18ch;
     }
+    #d{
+        width: 80%;
+    }
 }
 
 @media (max-width:808px) {
